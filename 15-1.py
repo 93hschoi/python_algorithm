@@ -3,8 +3,8 @@ ans_list = []
 visited=[False]*N   # [1,2,3,4]에서 사용했는지 안했는지 여부
 
 
-def combination(count):             # count는 자릿수
-    if(count ==M):                  # M자리 숫자가 만들어지면 수행
+def combination(count):             # count는 수열의 갯수
+    if(count ==M):                  # M자리 숫자가 만들어지면 return
         answer = " ".join(map(str,ans_list))    #리스트를 문자열로 변환하여 출력
         print(answer)
         return
